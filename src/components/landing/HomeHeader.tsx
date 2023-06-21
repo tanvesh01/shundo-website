@@ -8,7 +8,7 @@ import {
 
 export default component$(() => {
   const imageTransformer$ = $(
-    ({ src, width, height }: ImageTransformerProps): string => {
+    ({ width, height }: ImageTransformerProps): string => {
       // Here you can set your favorite image loaders service https://res.cloudinary.com/dtbziolbj/image/upload/v1687274002/Frame_2_2x_ludpkg.png
       return `https://res.cloudinary.com/dtbziolbj/image/upload/w_${width}/v1687274002/Frame_2_2x_ludpkg.png?height=${height}&width=${width}&format=webp&fit=fill`;
     }

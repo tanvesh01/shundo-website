@@ -1,10 +1,7 @@
 import { component$ } from "@builder.io/qwik";
-import { useServerTimeLoader } from "~/routes/layout";
 import styles from "./footer.module.css";
 
 export default component$(() => {
-  const serverTime = useServerTimeLoader();
-
   return (
     <footer class="px-8  bg-bgFooterColor mt-16">
       <div class="flex py-10 justify-between">
