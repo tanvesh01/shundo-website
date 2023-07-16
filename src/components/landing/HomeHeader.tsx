@@ -21,13 +21,28 @@ export default component$(() => {
     imageTransformer$,
   });
   return (
-    <div class="font-body text-center">
+    <div class="font-body text-center px-3">
       <p class="text-2xl font-medium tracking-tighter text-gray-400">
         windows users
       </p>
-      <h1 class={styles.landingBigTitle}>meet your new</h1>
-      <h1 class={styles.landingBigTitle}>productivity powerhouse</h1>
-      {/* <img src="https://res.cloudinary.com/dtbziolbj/image/upload/v1687270795/shundo_app_l96rjf.png" /> */}
+      <h1
+        class={`font-bold md:text-7xl tracking-tighter pb-2 text-5xl  ${styles.landingBigTitle}`}
+      >
+        meet your new
+      </h1>
+      <h1
+        class={`font-bold md:text-7xl tracking-tighter pb-2 text-5xl mb-4  ${styles.landingBigTitle}`}
+      >
+        productivity powerhouse
+      </h1>
+      <div class="bg-white/60 w-fit mx-auto p-[2px] rounded-xl">
+        <a
+          href="/"
+          class={`block w-fit mx-auto font-bold tracking-tighter text-xl from-[#06F62C] to-[#067D19] bg-gradient-to-b  ${styles.ctaSignUpBtn}`}
+        >
+          Sign up for alpha access
+        </a>
+      </div>
       <div class="flex justify-center mt-10">
         <Image
           layout="constrained"

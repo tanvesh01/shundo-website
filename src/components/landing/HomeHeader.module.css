@@ -1,7 +1,14 @@
 .landingBigTitle {
-    @apply font-bold text-7xl tracking-tighter pb-2;
     background: linear-gradient(180deg,#fff 0%,rgba(255,255,255,.7) 100%);
     background-clip: text;
     color: transparent;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;    
+}
+
+.ctaSignUpBtn {
+    background-color: var(--primary-green);
+    border-radius: 0.625rem;
+    /* border: 2px solid rgba(255, 255, 255, 1); */
+    /* background: linear-gradient(0deg, #067D19 0%, #06F62C 100%); */
+    padding: 1.1875rem 2.1875rem; 
 }
