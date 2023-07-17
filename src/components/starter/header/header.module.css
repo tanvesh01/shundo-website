@@ -1,7 +1,7 @@
 .navContainer {
   background-image: radial-gradient( rgba(0,0,0,0) 1px,black 1px );
   background-size: 4px 4px;
-  backdrop-filter: brightness(100%) blur(3px);
+  backdrop-filter: brightness(100%) blur(5px);
   position: fixed;
   top: 0px;
   left: 0px;

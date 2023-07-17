@@ -37,7 +37,7 @@ export default component$(() => {
       </h1>
       <div class="bg-white/60 w-fit mx-auto p-[2px] rounded-xl">
         <a
-          href="/"
+          href="https://forms.gle/h15QpBmVWhqKSSox9"
           class={`block w-fit mx-auto font-bold tracking-tighter text-xl from-[#06F62C] to-[#067D19] bg-gradient-to-b  ${styles.ctaSignUpBtn}`}
         >
           Sign up for alpha access
