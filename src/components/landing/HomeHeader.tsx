@@ -1,4 +1,4 @@
-import { component$, $ } from "@builder.io/qwik";
+import { component$, useVisibleTask$, $ } from "@builder.io/qwik";
 import styles from "./HomeHeader.module.css";
 import {
   Image,
@@ -20,39 +20,63 @@ export default component$(() => {
     resolutions: [640],
     imageTransformer$,
   });
+
+  useVisibleTask$(async () => {
+    // A task without `track` any state effectively behaves like a `on mount` hook.
+    console.log(
+      "Runs once when the component mounts in the server OR client.",
+      document.getElementById("splash"),
+      "sdsd"
+    );
+    // document.getElementById("splash").addEventListener("load", function () {
+    //   console.log("loaded");
+    //   document.getElementById("splash")?.classList.add("animate-splash");
+    // });
+    setTimeout(() => {
+      console.log("loaded");
+      document.getElementById("splash")?.classList.add("animate-splash");
+    }, 2000);
+  });
   return (
-    <div class="font-body text-center px-3">
-      <p class="text-2xl font-medium tracking-tighter text-gray-400">
-        windows users
-      </p>
-      <h1
-        class={`font-bold md:text-7xl tracking-tighter pb-2 text-5xl  ${styles.landingBigTitle}`}
-      >
-        meet your new
-      </h1>
-      <h1
-        class={`font-bold md:text-7xl tracking-tighter pb-2 text-5xl mb-4  ${styles.landingBigTitle}`}
-      >
-        productivity powerhouse
-      </h1>
-      <div class="bg-white/60 w-fit mx-auto p-[2px] rounded-xl">
-        <a
-          href="https://forms.gle/h15QpBmVWhqKSSox9"
-          class={`block w-fit mx-auto font-bold tracking-tighter text-xl from-[#06F62C] to-[#067D19] bg-gradient-to-b  ${styles.ctaSignUpBtn}`}
+    <div class="font-body text-center px-3 relative">
+      <img
+        id="splash"
+        class="w-[300px] absolute top-0 left-0 right-0 bottom-0 mx-auto z-40 opacity-0"
+        src="https://res.cloudinary.com/dtbziolbj/image/upload/v1689601767/shundo_splash_qd5laq.png"
+      />
+      <div class="z-50 relative">
+        <p class="text-2xl font-medium tracking-tighter text-gray-400">
+          windows users
+        </p>
+        <h1
+          class={`font-bold md:text-7xl tracking-tighter pb-2 text-5xl  ${styles.landingBigTitle}`}
         >
-          Sign up for alpha access
-        </a>
-      </div>
-      <div class="flex justify-center mt-10">
-        <Image
-          layout="constrained"
-          objectFit="fill"
-          width={600}
-          alt="Tropical paradise"
-          src={
-            "https://res.cloudinary.com/dtbziolbj/image/upload/v1687270795/shundo_app_l96rjf.png"
-          }
-        />
+          meet your new
+        </h1>
+        <h1
+          class={`font-bold md:text-7xl tracking-tighter pb-2 text-5xl mb-4  ${styles.landingBigTitle}`}
+        >
+          productivity powerhouse
+        </h1>
+        <div class="bg-white/60 w-fit mx-auto p-[2px] rounded-xl">
+          <a
+            href="https://forms.gle/h15QpBmVWhqKSSox9"
+            class={`block w-fit mx-auto font-bold tracking-tighter text-xl from-[#06F62C] to-[#067D19] bg-gradient-to-b  ${styles.ctaSignUpBtn}`}
+          >
+            Sign up for alpha access
+          </a>
+        </div>
+        <div class="flex justify-center mt-10">
+          <Image
+            layout="constrained"
+            objectFit="fill"
+            width={600}
+            alt="Tropical paradise"
+            src={
+              "https://res.cloudinary.com/dtbziolbj/image/upload/v1687270795/shundo_app_l96rjf.png"
+            }
+          />
+        </div>
       </div>
     </div>
   );
