@@ -41,7 +41,7 @@ export default component$(() => {
     <div class="font-body text-center px-3 relative">
       <img
         id="splash"
-        class="w-[300px] absolute top-0 left-0 right-0 bottom-0 mx-auto z-40 opacity-0"
+        class="w-[600px] absolute top-0 left-0 right-0 bottom-0 mx-auto z-40 opacity-0 select-none brightness-110 blur-sm"
         src="https://res.cloudinary.com/dtbziolbj/image/upload/v1689601767/shundo_splash_qd5laq.png"
       />
       <div class="z-50 relative">

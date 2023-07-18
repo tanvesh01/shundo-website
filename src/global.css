@@ -84,6 +84,6 @@ body {
 }
 
 @keyframes splash {
-  0%   {transform: scale(.8); opacity: 0;}
-  100% {transform: scale(1); opacity: 1 ;}
+  0%   {transform: scale(.8) rotate(-30deg); opacity: 0;}
+  100% {transform: scale(1) rotate(0deg); opacity: 1 ;}
 }
