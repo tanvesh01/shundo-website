@@ -1,9 +1,15 @@
 import { component$ } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
 import HomeHeader from "~/components/landing/HomeHeader";
+import FeatureGrid from "~/components/landing/FeatureGrid/FeatureGrid";
 
 export default component$(() => {
-  return <HomeHeader />;
+  return (
+    <>
+      <HomeHeader />
+      <FeatureGrid />
+    </>
+  );
 });
 
 export const head: DocumentHead = {
