@@ -1,5 +1,11 @@
 .green_gradient {
-    border-radius: 24px;
+    border-radius: 32px;
     border: 1px solid #323232;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0.14%, #0A260E 99.86%);
+}
+.bigTitle {
+    background: linear-gradient(180deg,#fff 0%,rgba(255,255,255,.7) 100%);
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;    
 }
