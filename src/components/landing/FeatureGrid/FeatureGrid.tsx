@@ -83,6 +83,10 @@ export default component$(() => {
           />
         </div>
       </div>
+      <h3 class="font-offbit max-w-screen-xl mx-auto pl-6 mt-6 text-4xl text-lightGreenAccent">
+        and much more
+      </h3>
     </div>
   );
 });
+// https://discord.gg/xBk67uWmbt

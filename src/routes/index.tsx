@@ -2,12 +2,14 @@ import { component$ } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
 import HomeHeader from "~/components/landing/HomeHeader";
 import FeatureGrid from "~/components/landing/FeatureGrid/FeatureGrid";
+import DiscordInvite from "~/components/landing/DiscordInvite/DiscordInvite";
 
 export default component$(() => {
   return (
     <>
       <HomeHeader />
       <FeatureGrid />
+      <DiscordInvite />
     </>
   );
 });

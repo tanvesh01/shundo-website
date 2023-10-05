@@ -1,0 +1,14 @@
+.discordInviteButton {
+    border-radius: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.55);
+    background: linear-gradient(0deg, #067D19 0%, #06F62C 100%);
+    padding: 1rem 2rem;
+    color: #FFF;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.63px;
+    display: block;
+    width: fit-content;
+}
