@@ -9,7 +9,9 @@ export default component$(() => {
         get more done. now.
       </h2>
       <div class="mx-auto rounded-lg grid grid-cols-1 md:grid-cols-10 gap-4 max-w-screen-xl mt-10 px-4">
-        <div class={`col-span-1 md:col-span-6 ${styles.green_gradient}`}>
+        <div
+          class={`col-span-1 md:col-span-6 overflow-hidden ${styles.green_gradient}`}
+        >
           <img
             class="mx-auto"
             alt="file search feature of shundo"
@@ -27,7 +29,9 @@ export default component$(() => {
             </p>
           </div>
         </div>
-        <div class={`col-span-1 md:col-span-4 ${styles.green_gradient}`}>
+        <div
+          class={`col-span-1 md:col-span-4 overflow-hidden ${styles.green_gradient}`}
+        >
           <div class="flex justify-end">
             <img
               class="text-right"

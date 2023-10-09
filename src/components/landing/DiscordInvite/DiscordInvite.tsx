@@ -2,7 +2,7 @@ import { component$ } from "@builder.io/qwik";
 import stlyes from "./DiscordInvite.module.css";
 export default component$(() => {
   return (
-    <div class="bg-bgFooterColor p-9 rounded-3xl flex flex-col md:flex-row  gap-4 justify-between max-w-screen-lg md:mx-auto mt-48 mx-4">
+    <div class="bg-bgFooterColor p-9 rounded-3xl flex flex-col md:flex-row  gap-4 justify-between max-w-screen-lg md:mx-auto mt-20 md:mt-48 mx-4">
       <div class="flex flex-col  md:flex-row  gap-4">
         <div>
           <svg
