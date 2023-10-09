@@ -4,10 +4,12 @@ module.exports = {
   theme: {
     fontFamily: {
       body: ["Inter", "sans-serif"],
+      offbit: ["Offbit", "sans-serif"],
     },
     extend: {
       colors: {
         bgFooterColor: "#0B0B0B",
+        lightGreenAccent: "#93c69b",
       },
     },
   },
