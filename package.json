@@ -26,6 +26,7 @@
     "@builder.io/qwik": "^1.1.5",
     "@builder.io/qwik-city": "^1.1.5",
     "@types/eslint": "8.40.0",
+    "@types/mixpanel-browser": "^2.49.0",
     "@types/node": "^20.2.5",
     "@typescript-eslint/eslint-plugin": "5.59.8",
     "@typescript-eslint/parser": "5.59.8",
@@ -43,6 +44,7 @@
   },
   "dependencies": {
     "@unpic/qwik": "^0.0.20",
+    "mixpanel-browser": "^2.49.0",
     "qwik-image": "^0.0.6"
   }
 }

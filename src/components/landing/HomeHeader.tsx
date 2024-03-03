@@ -5,6 +5,7 @@ import {
   type ImageTransformerProps,
   useImageProvider,
 } from "qwik-image";
+import mixpanel from "mixpanel-browser";
 
 export default component$(() => {
   const imageTransformer$ = $(
@@ -28,6 +29,12 @@ export default component$(() => {
       document.getElementById("splash"),
       "sdsd"
     );
+    mixpanel.init("71b88179e36da4d2e3ad5c8cb1ae9550", {
+      debug: true,
+      track_pageview: true,
+      persistence: "localStorage",
+    });
+    mixpanel.identify("website_mode");
     // document.getElementById("splash").addEventListener("load", function () {
     //   console.log("loaded");
     //   document.getElementById("splash")?.classList.add("animate-splash");
@@ -36,6 +43,10 @@ export default component$(() => {
       console.log("loaded");
       document.getElementById("splash")?.classList.add("animate-splash");
     }, 2000);
+  });
+
+  const trackDownload = $(() => {
+    mixpanel.track("Downloaded Shundo");
   });
   return (
     <div class="font-body text-center px-3 relative">
@@ -60,10 +71,12 @@ export default component$(() => {
         </h1>
         <div class="bg-white/60 w-fit mx-auto p-[2px] rounded-xl">
           <a
-            href="https://forms.gle/h15QpBmVWhqKSSox9"
+            onClick$={() => trackDownload()}
+            href="https://pub-ff4b623456244a1a80085d7bfe9c21de.r2.dev/shundo_0.0.16_x64-setup.exe"
+            target="_blank"
             class={`block w-fit mx-auto font-bold tracking-tighter text-xl from-[#06F62C] to-[#067D19] bg-gradient-to-b  ${styles.ctaSignUpBtn}`}
           >
-            Sign up for alpha access
+            Download for Windows
           </a>
         </div>
         <div class="flex justify-center mt-10">
