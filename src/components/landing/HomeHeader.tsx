@@ -54,6 +54,7 @@ export default component$(() => {
         id="splash"
         class="w-[600px] absolute top-0 left-0 right-0 bottom-0 mx-auto z-40 opacity-0 select-none brightness-110 blur-sm"
         src="https://res.cloudinary.com/dtbziolbj/image/upload/v1689601767/shundo_splash_qd5laq.png"
+        alt="Shundo Splash"
       />
       <div class="z-50 relative">
         <p class="text-2xl font-medium tracking-tighter text-gray-400">
@@ -72,7 +73,7 @@ export default component$(() => {
         <div class="bg-white/60 w-fit mx-auto p-[2px] rounded-xl">
           <a
             onClick$={() => trackDownload()}
-            href="https://pub-ff4b623456244a1a80085d7bfe9c21de.r2.dev/shundo_0.0.16_x64-setup.exe"
+            href="https://pub-ff4b623456244a1a80085d7bfe9c21de.r2.dev/shundo_setup.msi"
             target="_blank"
             class={`block w-fit mx-auto font-bold tracking-tighter text-xl from-[#06F62C] to-[#067D19] bg-gradient-to-b  ${styles.ctaSignUpBtn}`}
           >
