@@ -8,7 +8,7 @@
 
 @font-face {
   font-family: "Offbit";
-  src: url('/fonts/OffBitTrial-DotBold.ttf') format('truetype');
+  src: url("/fonts/OffBitTrial-DotBold.ttf") format("truetype");
   /* src: url('fonts/fira/eot/FiraSans-Regular.eot') format('embedded-opentype'),
        url('fonts/fira/woff2/FiraSans-Regular.woff2') format('woff2'),
        url('fonts/fira/woff/FiraSans-Regular.woff') format('woff'),
@@ -32,7 +32,6 @@
   --qwik-dark-background: #151934;
   --qwik-dark-text: #ffffff;
 
-
   --primary-green: #29e749;
 }
 
@@ -42,9 +41,9 @@ html {
   -moz-tab-size: 4;
   -o-tab-size: 4;
   tab-size: 4;
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-    'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
-    'Segoe UI Symbol', 'Noto Color Emoji';
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 p {
@@ -68,9 +67,10 @@ html {
   -moz-tab-size: 4;
   -o-tab-size: 4;
   tab-size: 4;
-  font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-    'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
-    'Segoe UI Symbol', 'Noto Color Emoji';
+  font-family: "Inter", ui-sans-serif, system-ui, -apple-system,
+    BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans",
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    "Noto Color Emoji";
 }
 
 body {
@@ -84,6 +84,23 @@ body {
 }
 
 @keyframes splash {
-  0%   {transform: scale(.8) rotate(-30deg); opacity: 0;}
-  100% {transform: scale(1) rotate(0deg); opacity: 1 ;}
+  0% {
+    transform: scale(0.8) rotate(-30deg);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1) rotate(0deg);
+    opacity: 1;
+  }
+}
+
+h1 {
+  @apply text-4xl font-bold tracking-tighter mb-4;
+}
+h2 {
+  @apply text-3xl font-bold tracking-tighter;
+}
+
+p {
+  @apply text-lg;
 }
