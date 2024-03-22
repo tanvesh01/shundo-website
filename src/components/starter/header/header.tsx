@@ -12,7 +12,7 @@ export default component$(() => {
           <a
             href="https://discord.gg/xBk67uWmbt"
             target="_blank"
-            class="flex items-center gap-2 opacity-80 hover:opacity-100 transition-opacity duration-200 ease-in-out"
+            class="flex items-center gap-2 opacity-80 hover:opacity-100 transition-opacity duration-200 ease-in-out text-white"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
