@@ -6,8 +6,89 @@
 }
 
 .ctaSignUpBtn {
+  cursor: pointer;
   background-color: var(--primary-green);
-  border-radius: 0.625rem;
   color: #fff;
   padding: 0.8rem 2.1875rem;
+
+  /* ======= */
+
+  all: unset;
+  box-shadow: inset 0 -2px 1px 0 #0000001a, inset 0 4px 16px 0 #ffffff80,
+    0 1px 2px 0 #0000001a, 0 3px 6px 0 #0000000a, 0 8px 11px 0 #0000000a,
+    0 43px 17px 0 #00000003, 0 68px 19px 0 #0000;
+  background: linear-gradient(95deg, #06f42c -13.39%, #067d19 114.46%);
+  text-shadow: 0 1px 0 #00000014;
+  line-height: normal;
+  letter-spacing: -0.18px;
+  font-size: 16px;
+  font-weight: 500;
+
+  padding: 16px 24px;
+  width: 100%;
+  letter-spacing: -0.0113rem;
+
+  font-style: normal;
+
+  translate: none;
+  rotate: none;
+  scale: none;
+  transform: translate(0px, 0px);
+  opacity: 1;
+
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  border-radius: 16px;
+  padding: 12px 25px;
+
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  line-height: normal;
+  color: white;
+  font-weight: 500;
+  gap: 6px;
+}
+
+.ctaSignUpBtn::before {
+  cursor: pointer;
+  position: absolute;
+  z-index: 3;
+  border: 1px solid #067d19;
+  border-radius: 14.5px;
+  box-shadow: inset 0 4px 16px 0 #067d19;
+  width: 100%;
+  height: 100%;
+  content: "";
+  inset: 0;
+}
+
+.ctaSignUpBtn::after {
+  cursor: pointer;
+  position: absolute;
+  z-index: -2;
+  border-radius: 12px;
+  background: linear-gradient(78deg, #067d19 -18.13%, #06f42c 111.84%);
+  width: 100%;
+  height: 100%;
+  animation: button_opacity-in-out 4s ease-in-out infinite alternate;
+  content: "";
+  inset: 0;
+}
+
+@keyframes button_opacity-in-out {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0.8;
+  }
+
+  100% {
+    opacity: 0;
+  }
 }

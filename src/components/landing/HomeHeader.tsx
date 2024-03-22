@@ -42,7 +42,7 @@ export default component$(() => {
     setTimeout(() => {
       console.log("loaded");
       document.getElementById("splash")?.classList.add("animate-splash");
-    }, 2000);
+    }, 500);
   });
 
   const trackDownload = $(() => {
@@ -70,12 +70,12 @@ export default component$(() => {
         >
           productivity powerhouse
         </h1>
-        <div class="bg-white/60 w-fit mx-auto p-[2px] rounded-xl">
+        <div class=" w-fit mx-auto  ">
           <a
             onClick$={() => trackDownload()}
             href="https://pub-ff4b623456244a1a80085d7bfe9c21de.r2.dev/shundo_setup.msi"
             target="_blank"
-            class={`block w-fit mx-auto font-bold tracking-tighter text-xl from-[#06F62C] to-[#067D19] bg-gradient-to-b  ${styles.ctaSignUpBtn}`}
+            class={`block w-fit mx-auto font-bold tracking-tighter text-xl  ${styles.ctaSignUpBtn}`}
           >
             Download for Windows
           </a>
